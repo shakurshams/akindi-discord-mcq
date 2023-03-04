@@ -22,3 +22,5 @@ example:
 9. If successful you should see the question with options in the channel which you can interact with.
 
 10. Answer the question and it should tell you if the answer was right or wrong.
+
+11. WARNING: as there is no session implemented, if you stop the server, you will have to run all the steps again.
