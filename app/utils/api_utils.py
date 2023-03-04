@@ -31,7 +31,7 @@ def get_api_access_token_from_authorization_code(code):
         status_code, data = api_client.make_request()
     except Exception as e:
         print(e)
-    finally:
+    else:
         return data.get("access_token", None), data.get("webhook", {}).get("url", None)
 
 

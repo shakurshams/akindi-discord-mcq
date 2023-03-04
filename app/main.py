@@ -45,14 +45,15 @@ def oauth_redirect():
 
         @response.call_on_close
         def on_close():
-            access_token, webhook = get_api_access_token_from_authorization_code(
+            if res:= get_api_access_token_from_authorization_code(
                 code=code
-            )
-            global_cache["access_token"] = access_token
-            global_cache["webhook"] = webhook
-            print(
-                f"accesst_token = {global_cache['access_token']}, webhook = {global_cache['webhook']}"
-            )
+            ):
+                access_token, webhook = res
+                global_cache["access_token"] = access_token
+                global_cache["webhook"] = webhook
+                print(
+                    f"accesst_token = {global_cache['access_token']}, webhook = {global_cache['webhook']}"
+                )
 
         return response
 
