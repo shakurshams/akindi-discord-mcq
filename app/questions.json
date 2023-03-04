@@ -1,0 +1,22 @@
+{
+    "1": {
+        "content": "What is the capital city of Bangladesh?",
+        "options": {
+            "A": "Rajshahi",
+            "B": "Dhaka",
+            "C": "Khulna",
+            "D": "Sylhet"
+        },
+        "answer": "B"
+    },
+    "2": {
+        "content": "What is the capital city of Canada?",
+        "options": {
+            "A": "Rajshahi",
+            "B": "Dhaka",
+            "C": "Ottowa",
+            "D": "Sylhet"
+        },
+        "answer": "C"
+    }
+}
